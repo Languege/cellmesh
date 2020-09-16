@@ -1,2 +1,4 @@
 demo/bin
 *.stackdump
+vendor
+.idea

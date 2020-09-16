@@ -7,7 +7,7 @@ import (
 
 var (
 	// 独立出来避免污染工具类的flagset
-	CommandLine = flag.NewFlagSet(os.Args[0], flag.ExitOnError)
+	CommandLine = flag.NewFlagSet(os.Args[0], flag.ContinueOnError)
 
 	// 服务发现地址
 	flagDiscoveryAddr = CommandLine.String("sdaddr", "127.0.0.1:8900", "Discovery address")
